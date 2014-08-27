@@ -1,0 +1,180 @@
+<head>
+<meta charset=utf-8 />
+
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
+</head>
+
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div style="float: right; line-height: 2px;"><a href="https://twitter.com/share" class="twitter-share-button" data-text="2014 Peninsula homicides map" data-via="Daily_Press">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>&nbsp;<div class="fb-share-button" data-href="http://www.dailypress.com/news/crime/dp-interactive-map-2014-hampton-roads-homicides-20140217,0,6636111.htmlpage" data-type="button_count"></div></div>
+
+<h1 style="font-family: arial;">2014 Peninsula Homicides Map</h1> 
+<div id="map" style="width: 100%; height: 470px"></div>
+
+<script>
+var mapboxTiles = L.tileLayer('https://{s}.tiles.mapbox.com/v3/g015.hop78mp9/{z}/{x}/{y}.png', {
+    attribution: '<a href="http://www.mapbox.com/about/maps/" target="_blank">Terms &amp; Feedback</a>'
+});
+var map = L.map('map')
+    .addLayer(mapboxTiles)
+    .setView([37.07, -76.48], 11);
+
+var marker = L.marker([37.037033, -76.357445]).addTo(map);
+marker.bindPopup("<b>Jeramiah Elijah Kimble</b><br> Shot on the 1300 block of Thomas").openPopup();
+
+var marker = L.marker([36.9887108, -76.41885939999997]).addTo(map);
+marker.bindPopup("<b>Joseph Henry Williams Jr</b><br> Shot on 33rd Street and Marshall Avenue").openPopup();
+
+var marker = L.marker([37.003801, -76.435496]).addTo(map);
+marker.bindPopup("<b>Isaac Olugbenga Oshin</b><br> Shot on 5825 Jefferson Avenue").openPopup();
+
+var marker = L.marker([36.9794502,-76.4162521]).addTo(map);
+marker.bindPopup("<b>Laran Tarel Strawter</b><br> Shot on Madison Avenue").openPopup();
+
+var marker = L.marker([36.98658,-76.42428]).addTo(map);
+marker.bindPopup("<b>Clinton Stonewall Jackson</b><br> Shot while driving").openPopup();
+
+var marker = L.marker([37.1653569, -76.54968059999999]).addTo(map);
+marker.bindPopup("<b>Karrie Ann Henson</b><br> Undisclosed cause of death").openPopup();
+
+var marker = L.marker([37.036461, -76.344119]).addTo(map);
+marker.bindPopup("<b>Elijah-Juan Zaire Vanness</b><br> Shot outside of an apartment").openPopup();
+
+var marker = L.marker([37.0223159, -76.3591480]).addTo(map);
+marker.bindPopup("<b>Jonathan Bradley Coles</b><br> Shot inside a house").openPopup();
+
+var marker = L.marker([37.0531640, -76.4031070]).addTo(map);
+marker.bindPopup("<b>Ka'Ron Burns</b><br> Found unconscious, suffered internal injuries").openPopup();
+
+var marker = L.marker([37.0169484, -76.3712894]).addTo(map);
+marker.bindPopup("<b>Adonus Deondre Turner</b><br> Shot at his residence").openPopup();
+
+var marker = L.marker([37.0275002, -76.3563630]).addTo(map);
+marker.bindPopup("<b>Tyquan</b><br> Found shot on sidewalk").openPopup();
+
+var marker = L.marker([37.0533550, -76.3433320]).addTo(map);
+marker.bindPopup("<b>Katherine Ann Fleming</b><br> Found shot").openPopup();
+
+var marker = L.marker([36.9994420, -76.3876360]).addTo(map);
+marker.bindPopup("<b>Terrance Arrington</b><br> Found shot in alleyway").openPopup();
+
+var marker = L.marker([37.1136138, -76.5144738]).addTo(map);
+marker.bindPopup("<b>Vidal Lamont Sills</b><br> Shot outside an apartment building").openPopup();
+
+var marker = L.marker([37.0441748, -76.4094222]).addTo(map);
+marker.bindPopup("<b>Devin Harrison</b><br> Found shot").openPopup();
+
+var marker = L.marker([36.9789035, -76.4195031]).addTo(map);
+marker.bindPopup("<b>Unnamed female</b><br> Shot at residence").openPopup();
+
+var marker = L.marker([36.9843048, -76.4078441]).addTo(map);
+marker.bindPopup("<b>Rachard Timothy Lewis</b><br> Shot outside").openPopup();
+
+var marker = L.marker([36.9843072, -76.4078793]).addTo(map);
+marker.bindPopup("<b>Michael Deon Robinson</b><br> Shot multiple times").openPopup();
+
+var marker = L.marker([36.9748850, -76.4153610]).addTo(map);
+marker.bindPopup("<b>Jamar Sherald Clarke</b><br> Shot at residence").openPopup();
+
+var marker = L.marker([37.0764326, -76.4686321]).addTo(map);
+marker.bindPopup("<b>Eric Vince Van Nostrand</b><br> Found dead at motel").openPopup();
+
+var marker = L.marker([37.0870821, -76.4730122]).addTo(map);
+marker.bindPopup("<b>David Duke Sims</b><br> Found shot outside apartment").openPopup();
+
+var marker = L.marker([37.0868128, -76.4543932]).addTo(map);
+marker.bindPopup("<b>John A. 'Lito' Nieves Jr.</b><br> Shot in parking lot").openPopup();
+
+var marker = L.marker([36.9779330, -76.6070640]).addTo(map);
+marker.bindPopup("<b>Naira Davis</b><br> Head struck by baseball").openPopup();
+
+var marker = L.marker([36.9913343, -76.4121993]).addTo(map);
+marker.bindPopup("<b>Gregory Leander Sanford</b><br> Sustained injuries after an assault").openPopup();
+
+</script>
+
+<style type="text/css">
+.tftable { font-family: arial; font-size: 12px; color: #000; width: 100%; border-width: 1px; border-color: #227cca; border-collapse: collapse; }
+.tftable th { font-family: arial; font-size: 12px; background-color: #4597d1; border-width: 1px; padding: 8px; border-style: solid; border-color: #fff; text-align: left; }
+.tftable tr { background-color: #fff; }
+.tftable td { font-family: arial; font-size: 12px; border-width: 1px; padding: 8px; border-style: solid; border-color: #fff; }
+.tftable tr:hover { background-color: #bed0de; }
+</style>
+
+<br><br>
+<table class="tftable" border="1" style="align: center; text-align: left;">
+<tr><th><b>Victim's Name</b></th><th><b>Age</b></th><th><b>Residence</b></th><th><b>Date of Death</b></th></tr>
+
+<tr><td>Jeramiah Elijah Kimble</td><td>19</td><td>Hampton</td><td>Jan. 12</td></tr>
+
+<tr><td>Karrie Ann Henson</td><td>24</td><td>No address</td><td>Jan. 17</td></tr>
+
+<tr><td>Joseph Henry Williams Jr.</td><td>71</td><td>Newport News</td><td>Jan. 19</td></tr>
+
+<tr><td>Isaac Olugbenga Oshin</td><td>56</td><td>Portsmouth</td><td>Feb. 12</td></tr>
+
+<tr><td>Naira Davis</td><td>72</td><td>Smithfield</td><td>Feb. 20</td></tr>
+
+<tr><td>Laran Tarel Strawter</td><td>26</td><td>Portsmouth</td><td>March 1</td></tr>
+
+<tr><td>Clinton Stonewall Jackson</td><td>79</td><td>Newport News</td><td>April 8</td></tr>
+
+<tr><td>Vidal Lamont Sills</td><td>41</td><td>Newport News</td><td>April 25</td></tr>
+
+<tr><td>Jamila Adam</td><td>23</td><td>Newport News</td><td>April 28</td></tr>
+
+<tr><td>Unnamed female</td><td>32</td><td>Newport News</td><td>May 10</td></tr>
+
+<tr><td>Elijah-Juan Zaire Vanness</td><td>18</td><td>Hampton</td><td>May 16</td></tr>
+
+<tr><td>Jonathan Bradley Coles</td><td>28</td><td>Hampton</td><td>May 17</td></tr>
+
+<tr><td>Ka'Ron Burns</td><td>3</td><td>Hampton</td><td>May 18</td></tr>
+
+<tr><td>Adonus Deondre Turner</td><td>17</td><td>Hampton</td><td>June 20</td></tr>
+
+<tr><td>Rachard Timothy Lewis</td><td>19</td><td>Newport News</td><td>June 22</td></tr>
+
+<tr><td>Michael Deon Robinson</td><td>28</td><td>Newport News</td><td>June 28</td></tr>
+
+<tr><td>Jamar Sherald Clarke</td><td>33</td><td>Newport News</td><td>June 29</td></tr>
+
+<tr><td>Tyquan</td><td>Unknown</td><td>Unknown</td><td>July 12</td></tr>
+
+<tr><td>Katherine Ann Fleming</td><td>65</td><td>Hampton</td><td>July 17</td></tr>
+
+<tr><td>Terrance Arrington</td><td>23</td><td>Hampton</td><td>July 22</td></tr>
+
+<tr><td>Eric Vince Van Nostrand</td><td>24</td><td>Newport News</td><td>August 9</td></tr>
+
+<tr><td>George Edward Neselrod Jr.</td><td>23</td><td>Hampton</td><td>August 16</td></tr>
+
+<tr><td>David Duke Sims</td><td>31</td><td>Chesapeake</td><td>August 17</td></tr>
+
+<tr><td>John A. "Lito" Nieves Jr.</td><td>17</td><td>Newport News</td><td>August 20</td></tr>
+
+<tr><td>Devin Harrison</td><td>17</td><td>Hampton</td><td>August 21</td></tr>
+
+<tr><td>Gregory Leander Sanford</td><td>59</td><td>Newport News</td><td>August 25</td></tr>
+
+</table><br><br>
+
+<div style="font-family: arial; text-align: left; font-size: 14px;">
+<b> &nbsp; <a href="http://www.dailypress.com/news/crime/dp-2014-hampton-roads-homicides-20140217,0,7709129.story">Click here for full list of 2014 Hampton Roads homicides >></a></b>
+</div>
+
+<br><br>
+
+</body>
